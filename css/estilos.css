@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Retosta;
+    src: url(../assets/fonts/Retosta.otf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #28696A;
+    height: 80px;
+    padding: 10px;
+}
+
+.navbar.navbar-expand-lg.navbar-light.bg-light{
+    z-index: 2;
+}
+
+main{
+    height: 100vh;
+    background-image: url(../assets/multimedia/ai-generated-7795815_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    color: black;
+    font-family: Retosta;
+}
+
+.call{
+    width: 75%;
+    border: 5px solid #28696A;
+    float: right;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.678);
+}
+
+.call a{
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.call a:hover{
+    background-color: grey;
+}
+
+h1{
+    font-family: Retosta;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+h3{
+    font-family: Retosta;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+h4{
+    font-family: Retosta;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+p{
+    padding: 20px;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3, 180px);
+    grid-template-areas:
+    "img3 img3 img3 img3"
+    "img2 img2 img4 img4" 
+    "img5 img5 img1 img1";
+    grid-gap: 15px;
+    padding: 20px;
+    background-color: #28696A;
+}
+
+.item{
+    border: 5px solid black;
+    background-size: cover;
+    background-position: center;
+    border-radius: 7px;
+    transition: all 0.7s;
+}
+
+.item:hover{
+    filter: grayscale(100%);
+    transform: scale(1.09);
+}
+
+.item1{
+    grid-area: img1;
+    background-image: url(../assets/multimedia/cafe-6019474_1280.jpg);
+}
+
+.item2{
+    grid-area: img2;
+    background-image: url(../assets/multimedia/coffee-2306471_640.jpg);
+}
+
+.item3{
+    grid-area: img3;
+    background-image: url(../assets/multimedia/coffee-2560260_1280.jpg);
+}
+
+.item4{
+    grid-area: img4;
+    background-image: url(../assets/multimedia/coffee-2425303_1280.jpg);
+}
+
+.item5{
+    grid-area: img5;
+    background-image: url(../assets/multimedia/street-cafe-4472312_1280.jpg);
+}
+
+.h3Carrusel{
+    font-family: Retosta;
+    font-size: 22px;
+    color: #28696A;
+}
+
+.pCarrusel{
+    font-size: 15px;
+    color: #28696A;
+}
+
+footer{
+    background-color: #28696A;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p{
+    font-size: 20px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.subir{
+    height: 25px;
+    width: 25px;
+    background-color: #28696A;
+    color: white;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 15px;
+}

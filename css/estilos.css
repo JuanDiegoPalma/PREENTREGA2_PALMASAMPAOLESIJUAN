@@ -152,6 +152,8 @@ form{
 }
 
 .botonEnviar{
+    background-color: #28696A;
+    color: white;
     margin-top: 20px;
     padding: 10px;
 }
